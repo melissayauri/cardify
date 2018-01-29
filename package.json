@@ -1,0 +1,23 @@
+{
+  "name": "cardify",
+  "version": "1.0.0",
+  "description": "Elaborar una libreria",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel src -d lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melissayauri/cardify.git"
+  },
+  "author": "Melissa Yauri y Silvia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melissayauri/cardify/issues"
+  },
+  "homepage": "https://github.com/melissayauri/cardify#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
