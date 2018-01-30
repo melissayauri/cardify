@@ -1,11 +1,9 @@
-/* se ejecuta la función cardify*/
-/*elaborando el plugin-libreria*/
-/*función con clausura*/
 (function($) {
   /*maneja la interaaciones con elementos visuales*/
     $.fn.cardify = function() {
       /*busca todas la imagenes en el contenedor*/
       let imagen = $(this).find('img');
+      
       imagen.each(function() {
         /*a la etiqueta img lo contiene la etiqueta figure*/
         let figure = $(this).wrap('<figure></figure>');
@@ -21,6 +19,31 @@
         /*text.css({'display': 'none'
       });*/
         /* incluyendo el hover*/
+      });
+
+      imagen.mouseover(function() {
+         /*seleccionando el atributo alt de la etiqueta img*/
+        let getAttrOver = $(this).attr('alt');
+        /*seleccionando el elemento que le precede a la etiqueta img,que es figcaption*/
+        let showText = $(this).next().text(getAttrOver);
+        /*mostrando texto de figcaprion*/
+        showText.css({'display': 'inline'});
+        /*opacando imagen*/
+        $(this).css({'opacity': '0.1',});
+
+      });
+      
+      imagen.mouseout(function() {
+         /*seleccionando el atributo alt de la etiqueta img*/
+        let getAttrOut = $(this).attr('alt')
+        /*seleccionando el elemento que le precede a la etiqueta img,que es figcaption*/
+        let outText = $(this).next().text(getAttrOut);
+        /*ocultando texto de figcaprion*/
+        outText.css({'display': 'none'});
+       /*visualizando imagen*/
+        $(this).css({'opacity': '1',});
+
+
       });
       /*
       imagen.on('mouseover', function() {
