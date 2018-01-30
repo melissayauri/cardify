@@ -17,7 +17,9 @@
   },
   "homepage": "https://github.com/melissayauri/cardify#readme",
   "devDependencies": {
+    "babel": "^6.23.0",
     "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.6.1"
+    "babel-preset-env": "^1.6.1",
+    "cli": "^1.0.1"
   }
 }

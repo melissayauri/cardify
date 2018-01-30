@@ -17,3 +17,9 @@ body{
   border-radius: 10px;
 
 }
+
+.letter{
+  font-size: 5rem;
+  outline: 1px solid red;
+
+}
