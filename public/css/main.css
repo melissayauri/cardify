@@ -10,6 +10,9 @@ body{
   background: linear-gradient(650deg,#f6609d,#8d51c5);
 }
 
+h1{
+  font-size: 5rem;
+}
 .img{
   width: 40rem;
   height: 40rem;
@@ -20,6 +23,7 @@ body{
 
 .letter{
   font-size: 5rem;
+  text-align: center;
   outline: 1px solid red;
 
 }
