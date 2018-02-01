@@ -6,10 +6,22 @@
 
 ***
 ## Objetivo
+
 Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
 imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
 con el texto del atributo `alt` de la imagen.
+
+## Integrantes
+
+* Melissa Yauri
+* Silvia Fuentes
+
+## Herramientas
+
+* Jquery.
+* Babel(transpilador).
+* html,css,javascript.
 
 ## Procedimiento de trabajo
 
@@ -46,3 +58,19 @@ Mediante el plugin cardify, lo que se realiza es lo siguiente:
 3. Finalmente se realiza un efecto `hover`, para que aparezca el atributo `alt`, que se encuentra en la etiqueta `figure`
 
 
+## Instalación
+
+### Global (navegador)
+
+```html
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="index.js"></script>
+```
+
+## Uso
+
+```js
+// `container` es el selector del contenedor donde se buscarán todas las
+// imágenes a ser procesadas.
+$(container).cardify({});
+```
