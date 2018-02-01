@@ -13,33 +13,27 @@ con el texto del atributo `alt` de la imagen.
 
 ## Procedimiento de trabajo
 
-1. Para la creación de la librería, se procede con la inicialización del comando `npm.init`, para la creación del objeto JSON.
+1.Para la creación de la librería, se procede con la inicialización del comando `npm.init`, para la creación del objeto JSON.
 En este archivo debe escribirse el siguiente comando:
-
-"build": "babel --presets env src -d public/js",
-
+("build": "babel --presets env src -d public/js"),
 con el fin de que se realize la sincronización de babel con las carpetas donde se ejecutará los archivos en ES5.
 
-2. Luego se ejecuta el comando `npm install --save-dev babel-cli babel-preset-env`, para instalar babel.
+2.Luego se ejecuta el comando `npm install --save-dev babel-cli babel-preset-env`, para instalar babel.
+Esto producirá el archivo `package-lock.json` y `node_modules`.
 
-Esto producirá el archivo `package-lock.json` y `node_modules`
+3.Crear el archivo `.babelrc` y incorporar lo siguiente.
+{ "presets": ["env"] }
 
-3. Crear el archivo `.babelrc` y incorporar lo siguiente.
-
-  { "presets": ["env"] }
-
-4. Y también crear el archivo `.gitignore`, para que git, ciertos archivos los ignore y no los subas como por ejemplo el node_modules. En este archivo se debe de escribir los archivos que no se desean subir.Se incorpora lo siguiente:
-
+4.Y también crear el archivo `.gitignore`, para que git, ciertos archivos los ignore y no los subas como por ejemplo el node_modules. En este archivo se debe de escribir los archivos que no se desean subir.Se incorpora lo siguiente:
 node_modules/
 .DS_Store
 Thumbs.db
 
-5. En el archivo `app.js` ubicados en la carpeta src, se procede con llamar al plugin con la función
+5.En el archivo `app.js` ubicados en la carpeta src, se procede con llamar al plugin con la función
+$('#container-img').cardify();
 
-  $('#container-img').cardify();
-
-6. En el archivo `index.js` ubicados en la carpeta src se encuentra la ejecución del plugin `Cardify`
-7. Finalmente para hacer la conversión de ES6 a ES5, se ejecuta en el `comand node.js`, lo siguiente `npm install --save-dev babel-cli` y luego `npm run bluid`, con ello convertiremos a ES5, que se ubica en la carpeta public.
+6.En el archivo `index.js` ubicados en la carpeta src se encuentra la ejecución del plugin `Cardify`
+7.Finalmente para hacer la conversión de ES6 a ES5, se ejecuta en el `comand node.js`, lo siguiente `npm install --save-dev babel-cli` y luego `npm run bluid`, con ello convertiremos a ES5, que se ubica en la carpeta public.
 
 
 ## Funcinamiento
