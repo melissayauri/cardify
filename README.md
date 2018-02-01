@@ -58,7 +58,7 @@ Mediante el plugin cardify, lo que se realiza es lo siguiente:
 3. Finalmente se realiza un efecto `hover`, para que aparezca el atributo `alt`, que se encuentra en la etiqueta `figure`
 
 ***
-## Documentacion
+## Documentación
 
 ### ¿Qué es Cardify?
 
