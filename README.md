@@ -48,7 +48,7 @@ con el texto del atributo `alt` de la imagen.
 7.- Finalmente para hacer la conversión de ES6 a ES5, se ejecuta en el `comand node.js`, lo siguiente `npm install --save-dev babel-cli` y luego `npm run bluid`, con ello convertiremos a ES5, que se ubica en la carpeta public.
 
 
-## Funcinamiento
+## Desarrollo
 ![GIF](public/assets/imagenes/gif-demo.gif)
 
 Mediante el plugin cardify, lo que se realiza es lo siguiente:
@@ -57,20 +57,28 @@ Mediante el plugin cardify, lo que se realiza es lo siguiente:
 2. Luego en esa etiqueta se le adiciona la etiqueta `figcaption`, que contiene el atributo `alt`, de la imagen.
 3. Finalmente se realiza un efecto `hover`, para que aparezca el atributo `alt`, que se encuentra en la etiqueta `figure`
 
+***
+## Documentacion
 
-## Instalación
+### ¿Qué es Cardify?
 
-### Global (navegador)
+Cardify es una herramienta que le permitirá mostrar de manera dinamica, el texto equivalente (alt), de cada imagen, dentro de un contenedor específico.
+
+### Funcionalidad
+
+Utilizando Cardify, automaticamente:
+1. Las imágenes son envueltas por la etiqueta `figure`
+2. Luego en esa etiqueta se le adiciona la etiqueta `figcaption`, que contiene el atributo `alt`, de la imagen.
+3. Finalmente se realiza un efecto `hover`, para que aparezca el atributo `alt`, que se encuentra en la etiqueta `figure`
+
+### Uso
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="index.js"></script>
 ```
 
-## Uso
-
 ```js
 // `container` es el selector del contenedor donde se buscarán todas las
 // imágenes a ser procesadas.
 $(container).cardify({});
-```
