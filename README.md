@@ -7,7 +7,7 @@ Implementar un plugin de jQuery que dado un contenedor debe buscar todas las
 imágenes que encuentre dentro del contenedor y reemplazarlas por un nuevo
 elemento `<figure>` que contenga la imagen (`<img>`) además de una etiqueta `<figcaption>`con el texto del atributo `alt` de la imagen.Asimismo se le adiciona el efecto hover a cada imagen.
 
-![GIF](public/assets/imagenes/principal.png)
+![GIF](public/assets/imagenes/principal.PNG)
 
 ## Integrantes
 
