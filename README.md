@@ -1,17 +1,13 @@
-
-
-
-* **Track:** _Common Core_
-* **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
-* **Unidad:** _Producto final_
+# Cardify
 
 ***
 ## Objetivo
 
-Implementar un plugin de jQuery que dado un _contenedor_ debe buscar todas las
-imágenes que encuentre dentro del _contenedor_ y reemplazarlas por un nuevo
-elemento `<figure>` que contenga la imagen (`<img>`) además de un `<figcaption>`
-con el texto del atributo `alt` de la imagen.
+Implementar un plugin de jQuery que dado un contenedor debe buscar todas las
+imágenes que encuentre dentro del contenedor y reemplazarlas por un nuevo
+elemento `<figure>` que contenga la imagen (`<img>`) además de una etiqueta `<figcaption>`con el texto del atributo `alt` de la imagen.Asimismo se le adiciona el efecto hover a cada imagen.
+
+![GIF](public/assets/imagenes/principal.png)
 
 ## Integrantes
 
@@ -20,9 +16,11 @@ con el texto del atributo `alt` de la imagen.
 
 ## Herramientas
 
-* Jquery.
-* Babel(transpilador).
-* html,css,javascript.
+* Jquery: Es una librería de JavaScript que simplifica la tarea de programar en JavaScript y permite agregar interactividad a un sitio web.
+
+* Babel(transpilador): Herramienta  que nos permite convertir nuestro código de JavaScript ES6 en código de ES5.
+
+* Html,Css,javascript.
 
 ## Procedimiento de trabajo
 
@@ -50,12 +48,18 @@ con el texto del atributo `alt` de la imagen.
 
 
 ## Desarrollo
-![GIF](public/assets/imagenes/gif-demo.gif)
+![GIF](public/assets/imagenes/demo.gif)
 
 Mediante el plugin cardify, lo que se realiza es lo siguiente:
 
-1. Las imágenes son envueltas por la etiqueta `figure`
-2. Luego en esa etiqueta se le adiciona la etiqueta `figcaption`, que contiene el atributo `alt`, de la imagen.
+Primero se tiene lo siguiente
+
+![img](public/assets/imagenes/img.png)
+
+2. Después las imágenes son envueltas por la etiqueta `figure`
+3. Luego en esa etiqueta se le adiciona la etiqueta `figcaption`, que contiene el atributo `alt`, de la imagen.
+
+![etiqueta](public/assets/imagenes/etiqueta.png)
 3. Finalmente se realiza un efecto `hover`, para que aparezca el atributo `alt`, que se encuentra en la etiqueta `figure`
 
 ***
@@ -72,7 +76,7 @@ Utilizando Cardify, automaticamente:
 2. Luego en esa etiqueta se le adiciona la etiqueta `figcaption`, que contiene el atributo `alt`, de la imagen.
 3. Finalmente se realiza un efecto `hover`, para que aparezca el atributo `alt`, que se encuentra en la etiqueta `figure`
 
-### Uso
+### Instalación
 
 ```html
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -80,7 +84,6 @@ Utilizando Cardify, automaticamente:
 ```
 
 ```js
-// `container` es el selector del contenedor donde se buscarán todas las
-// imágenes a ser procesadas.
-$(container).cardify({});
 
+$(container).cardify({});
+```
