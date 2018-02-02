@@ -54,12 +54,12 @@ Mediante el plugin cardify, lo que se realiza es lo siguiente:
 
 Primero se tiene lo siguiente
 
-![img](public/assets/imagenes/img.png)
+![img](public/assets/imagenes/img.PNG)
 
 2. Después las imágenes son envueltas por la etiqueta `figure`
 3. Luego en esa etiqueta se le adiciona la etiqueta `figcaption`, que contiene el atributo `alt`, de la imagen.
 
-![etiqueta](public/assets/imagenes/etiqueta.png)
+![etiqueta](public/assets/imagenes/etiqueta.PNG)
 3. Finalmente se realiza un efecto `hover`, para que aparezca el atributo `alt`, que se encuentra en la etiqueta `figure`
 
 ***
