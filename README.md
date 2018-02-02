@@ -1,4 +1,5 @@
-# Cardify
+
+
 
 * **Track:** _Common Core_
 * **Curso:** _JS Deep Dive: Crea tu propia librería usando JavaScript_
@@ -82,3 +83,4 @@ Utilizando Cardify, automaticamente:
 // `container` es el selector del contenedor donde se buscarán todas las
 // imágenes a ser procesadas.
 $(container).cardify({});
+

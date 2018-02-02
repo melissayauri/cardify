@@ -7,11 +7,14 @@
 }
 
 body{
-  background: linear-gradient(650deg,#f6609d,#8d51c5);
+  background: linear-gradient(90deg,#e85f5e,#e4b587);
 }
 
 h1{
   font-size: 5rem;
+}
+button a{
+  text-decoration: none;
 }
 .img{
   width: 40rem;
@@ -24,5 +27,67 @@ h1{
 .letter{
   font-size: 5rem;
   text-align: center;
+}
 
+.title{
+
+}
+
+img[alt="gif"]{
+  margin-left: 40rem;
+}
+.btn-lib{
+font-size: 5rem;
+  text-decoration: none;
+  color: white;
+margin-bottom: 2rem;
+
+}
+.btn-lib a{
+  text-decoration: none;
+  color: white;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+}
+button {
+
+
+ background-color: #e85f5e;
+
+
+}
+button:before {
+ font-family: FontAwesome;
+ content:"\f07a";
+ position: absolute;
+ top: 220px;
+ left:-30px;
+
+ transition: all 500ms ease-in-out;
+ color: #e4b587;
+ opacity: 0;
+font-size: 40px;
+}
+button:hover:before {
+ left: 180px;
+ color: white;
+ opacity: 0.8;
+}
+
+
+.info{
+  font-size: 3rem;
+  padding: 1rem;
+  word-wrap: break-word;
+  color: black;
+  margin-top: 2rem;
+}
+.line{
+  outline: 1px solid red;
+}
+
+.efect-img{
+  border-radius: 50%;
+  opacity: 0.5;
 }

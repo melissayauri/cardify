@@ -28,7 +28,9 @@
       /* mostrando texto de figcaprion*/
       showText.css({'display': 'inline'});
       /* opacando imagen*/
-      $(this).css({'opacity': '0.1'});
+      /* $(this).css({'opacity': '0.5'
+    });*/
+      $(this).addClass('efect-img');
     });
     imagen.mouseout(function() {
       /* seleccionando el atributo alt de la etiqueta img*/
@@ -38,7 +40,8 @@
       /* ocultando texto de figcaption*/
       outText.css({'display': 'none'});
       /* visualizando imagen*/
-      $(this).css({'opacity': '1'});
+      /* $(this).css({'opacity': '1'});*/
+      $(this).removeClass('efect-img');
     });
   };
 })(jQuery);
