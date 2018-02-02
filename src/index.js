@@ -23,8 +23,7 @@
       /* mostrando texto de figcaprion*/
       showTextFigcaption.css({'display': 'inline'});
       /* opacando imagen*/
-       $(this).css({'opacity': '0.5'});
-    
+      $(this).addClass('efect-img');
     });
 
     imagen.mouseout(function() {
@@ -35,8 +34,7 @@
       /* ocultando texto de figcaption*/
       outTextFigcaption.css({'display': 'none'});
       /* visualizando imagen*/
-       $(this).css({'opacity': '1'});
-  
+      $(this).removeClass('efect-img');
     });
   };
 })(jQuery);
