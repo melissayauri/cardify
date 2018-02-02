@@ -30,7 +30,7 @@
       /* mostrando texto de figcaprion*/
       showText.css({ 'display': 'inline' });
       /* opacando imagen*/
-      /*$(this).css({'opacity': '0.5'
+      /* $(this).css({'opacity': '0.5'
       });*/
       $(this).addClass('efect-img');
     });
