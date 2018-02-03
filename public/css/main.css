@@ -74,6 +74,6 @@ button:hover:before {
 
 /* efecto en la imagen*/
 .efect-img{
-  border-radius: 50%;
+  /*border-radius: 50%;*/
   opacity: 0.5;
 }
