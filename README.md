@@ -101,7 +101,8 @@ Para hacer uso de **Cardify** debemos vincular los siguientes archivos.
 
 ### **Uso**
 
-    5. Agregar la siguiente línea de código al archivo Javascript del proyecto. Nombrar el ID a utilizar en el contenedor de imagenes o usar "container-img".
+    5. Agregar la siguiente línea de código al archivo Javascript del proyecto.
+    Nombrar el ID a utilizar en el contenedor de imagenes o usar "container-img".
 
 ```js
 //container-cardify es el selector del contenedor 
