@@ -2,13 +2,13 @@
 
 (function ($) {
   /* maneja la interaaciones con elementos visuales*/
-  $.fn.cardify = function () {
+  $.fn.cardify = function() {
     /* busca todas la imagenes en el contenedor*/
     var imagen = $(this).find('img');
     /* añadiendo estilos a las imágenes*/
     imagen.addClass('img');
     /* recorre cada una de las imágenes*/
-    imagen.each(function () {
+    imagen.each(function() {
       /* a la etiqueta img lo contiene la etiqueta figure*/
       $(this).wrap('<figure></figure>');
       /* con this se seleciona las imagnes, etiqueta img */
@@ -16,7 +16,7 @@
       $(this).parent().append($('<figcaption class= "letter"></figcaption>'));
     });
     /* incluyendo el hover*/
-    imagen.mouseover(function () {
+    imagen.mouseover(function() {
       /* seleccionando el atributo alt de la etiqueta img*/
       var getAttrOver = $(this).attr('alt');
       /* seleccionando el elemento que le precede a la etiqueta img,que es figcaption*/
@@ -27,7 +27,7 @@
       $(this).addClass('efect-img');
     });
 
-    imagen.mouseout(function () {
+    imagen.mouseout(function() {
       /* seleccionando el atributo alt de la etiqueta img*/
       var getAttrOut = $(this).attr('alt');
       /* seleccionando el elemento que le precede a la etiqueta img,que es figcaption*/
