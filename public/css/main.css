@@ -10,47 +10,29 @@ body{
   background: linear-gradient(90deg,#e85f5e,#e4b587);
 }
 
+/*clase reutilizable*/
 .title{
   font-size: 7rem;
 }
 
-.img{
-  width: 40rem;
-  height: 40rem;
-  border: 5px solid white;
-  border-radius: 10px;
-  margin-bottom: 2rem;
-}
-
-.letter{
-  font-size: 5rem;
-  text-align: center;
-  position: absolute;
-  left: 25%;
-  top: 25%;
-
-
-}
-
-img[alt="gif"]{
-
-}
+/* estilos para el layout principal*/
 /*botón prueba cardify*/
 .btn-lib{
   font-size: 5rem;
   text-decoration: none;
   color: white;
   margin-bottom: 2rem;
- background-color: #e85f5e;
+  background-color: #e85f5e;
 }
+
 .btn-lib a{
   text-decoration: none;
   color: white;
   padding-left: 3rem;
   padding-right: 3rem;
-
 }
 
+/* efecto para que el botón prueba cardify el icono aparezca por la izquierda*/
 button:before {
  font-family: FontAwesome;
  content:"\f07a";
@@ -69,6 +51,7 @@ button:hover:before {
  opacity: 0.8;
 }
 
+/* información sobre la librería*/
 .info{
   font-size: 3rem;
   padding: 1rem;
@@ -77,8 +60,67 @@ button:hover:before {
   margin-top: 2rem;
 }
 
+
+
+/* estilos para el archivo que contiene el demo */
+.img{
+  width: 40rem;
+  height: 40rem;
+  border: 5px solid white;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+}
+.color{
+  color: black;
+}
+
+.margin{
+  margin-top: 1rem;
+  color:black;
+  display: inline-block;
+}
+
+nav{
+  font-size: 3rem;
+}
+
+.nav li:hover{
+  background-color: #ec898f;
+  border-radius: 20px;
+}
+
+div .modal-dialog .modal-content{
+  /*  background: linear-gradient(90deg,#e85f5e,#e4b587);*/
+    background-color: #e85f5e;
+}
+div .modal-dialog .modal-header p{
+  color:black;
+}
+
+div .modal-dialog .modal-header code{
+  font-size: 13px;
+}
+
+/* clases para el plugin*/
+.letter{
+  font-size: 5rem;
+  text-align: center;
+  position: absolute;
+  left: 20%;
+  top: 25%;
+  z-index: -1;
+  color:black;
+  word-wrap: break-word;
+  width: 60%;
+}
 /* efecto en la imagen*/
 .efect-img{
-  /*border-radius: 50%;*/
   opacity: 0.5;
+  border: 10px solid #ec898f;
+  border-right-color: white;
+  border-bottom-color: white;
+  border-radius: 50%;
+  -webkit-transition: all 0.8s ease-in-out;
+  -moz-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }

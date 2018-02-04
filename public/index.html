@@ -8,46 +8,98 @@
      <link rel="stylesheet" href="vendors/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
-  <body class="container-lib">
-    <div class="container-fluid" id="container-img">
-      <a class="navbar-brand" href="../index.html"><i class="glyphicon glyphicon-chevron-left return"></i></a>
-      <h1 class="text-center title">Images Galery</h1>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="http://www.happylowcost.com/wp-content/uploads/2016/12/Paris-travel-AP65117955-xlarge.jpg" alt="Torre de Eifel">
+  <body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <!--boton barras para la version mobile-->
+          <button type="button" class="navbar-toggle collapsed boton-hamburger" data-toggle="collapse" data-target="#navbar-1">
+            <span class="sr-only">Menu</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!--imagen labcar-->
+          <a class="navbar-brand" href="../index.html">
+            <img alt="Brand" src="assets/imagenes/camara.png">
+          </a>
+          <span class="margin">Cardify</span>
         </div>
-        <div class="col-md-4">
-          <img src="https://losviajesdedomi.com/wp-content/uploads/2014/03/machu-picchu-maravillas-del-mundo-1-600x475.jpeg" alt="Machu Picchu">
+        <!--Menu despegable para desktop y mobile-->
+        <div class="collapse navbar-collapse" id="navbar-1">
+          <!--se posciona al lado derecho en desktop-->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="js/index.js" download >Descárgalo</a></li>
+            <li><a href="https://github.com/melissayauri/cardify"target="_blank" >Descubre el código</a></li>
+            <li><a href="#download" data-toggle="modal">Instalar</a></li>
+          </ul>
         </div>
-        <div class="col-md-4">
-          <img src="http://www.islamicity.org/wp-content/plugins/blueprint-timthumb/timthumb.php?src=http://media.islamicity.org/wp-content/uploads/2017/03/AdobeStock_12502528.jpeg&w=1200&h=675&q=50" alt="Taj Majal">
+        <!--modal de como instalar el plugin-->
+        <div class="modal fade" id ="download">
+          <div class="modal-dialog ">
+            <div class="modal-content content-modal">
+              <div class="modal-header ">
+                <!--botón para cerrar-->
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close" ><span aria-hidden="true" class="color">&times;</span></button>
+                <p >1. Descarga el archivo index.js, en el cual encontrarás el plugin y enlazálo</p>
+                <code> &ltscript type="text/javascript" src="index.js"&gt&lt/script&gt</code>
+                <p>2. También instala la herramienta jquery</p>
+                <code class="img"> &ltscriptsrc="https://ajax.googleapis
+                .com/ajax/libs/jquery/3.2.1/jquery.min.js"&gt&lt/script&gt</code>
+                <p>3. Y finalmente tienes que ejecutar la función cardify mediante el contenedor de la imágenes.Recuerda que  <code>#container-img</code> lo puedes cambiar como desees, solo es un nombre para el contenedor de imágenes</p>
+                <code> $(document).ready(function() {
+                   $('#container-img').cardify();
+                });</code>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="http://www.viajaraitalia.com/wp-content/uploads/2011/05/Colosseum_in_Rome_Italy-1024x601.jpg" alt="Coliseo de Roma">
+    </nav>
+
+    <!--sección de la galería de imágenes-->
+    <section>
+      <!--contenedor de imágenes-->
+      <div class="container-fluid" id="container-img">
+        <h1 class="text-center title">Images Galery</h1>
+        <div class="row">
+          <div class=" col-md-offset-0 col-md-4 col-xs-11 col-xs-offset-1 ">
+            <img src="http://www.happylowcost.com/wp-content/uploads/2016/12/Paris-travel-AP65117955-xlarge.jpg" alt="Torre de Eifel">
+          </div>
+          <div class=" col-md-offset-0 col-md-4 col-xs-11 col-xs-offset-1">
+            <img src="https://losviajesdedomi.com/wp-content/uploads/2014/03/machu-picchu-maravillas-del-mundo-1-600x475.jpeg" alt="Machu Picchu">
+          </div>
+          <div class=" col-md-offset-0 col-md-4 col-xs-11 col-xs-offset-1 ">
+            <img src="http://www.islamicity.org/wp-content/plugins/blueprint-timthumb/timthumb.php?src=http://media.islamicity.org/wp-content/uploads/2017/03/AdobeStock_12502528.jpeg&w=1200&h=675&q=50" alt="Taj Majal">
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="https://losviajesdedomi.com/wp-content/uploads/2014/03/cristo-redentor-maravillas-del-mundo-1-600x399.jpeg" alt="Cristo Redentor">
+        <div class="row">
+          <div class=" col-md-offset-0 col-md-4 col-xs-11 col-xs-offset-1">
+            <img src="http://www.viajaraitalia.com/wp-content/uploads/2011/05/Colosseum_in_Rome_Italy-1024x601.jpg" alt="Coliseo de Roma">
+          </div>
+          <div class="col-md-offset-0 col-md-4 col-xs-11 col-xs-offset-1">
+            <img src="https://losviajesdedomi.com/wp-content/uploads/2014/03/cristo-redentor-maravillas-del-mundo-1-600x399.jpeg" alt="Cristo Redentor">
+          </div>
+          <div class="col-md-offset-0 col-md-4 col-xs-11 col-xs-offset-1">
+            <img src="https://static.vix.com/es/sites/default/files/styles/large/public/imj/nuestrorumbo/C/Como-llegar-a-Santa-Sofia-de-Estambul-00.jpg?itok=gMxd3no9" alt="Santa Sofía">
+          </div>
         </div>
-        <div class="col-md-4">
-          <img src="https://static.vix.com/es/sites/default/files/styles/large/public/imj/nuestrorumbo/C/Como-llegar-a-Santa-Sofia-de-Estambul-00.jpg?itok=gMxd3no9" alt="Santa Sofía">
+        <div class="row">
+          <div class="col-md-offset-0 col-md-4 col-xs-11 col-xs-offset-1">
+            <img src="https://losviajesdedomi.com/wp-content/uploads/2014/03/san-basilio-maravillas-del-mundo-1-520x600.jpeg" alt="Catedral de San Basilio">
+          </div>
+          <div class="col-md-offset-0 col-md-4 col-xs-11 col-xs-offset-1">
+            <img src="https://locuraviajes.com/wp-content/uploads/2013/09/las-nuevas-7-maravillas-del-mundo-Chich%C3%A9n-Itz%C3%A1-M%C3%A9xico-600x399.jpg" alt="Chichén Itzá">
+          </div>
+          <div class="col-md-offset-0 col-md-4 col-xs-11 col-xs-offset-1">
+            <img src="http://www.curiosfera.com/wp-content/uploads/2017/11/origen-gran-muralla-china.jpg" alt="Murralla China">
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <img src="https://losviajesdedomi.com/wp-content/uploads/2014/03/san-basilio-maravillas-del-mundo-1-520x600.jpeg" alt="Catedral de San Basilio">
-        </div>
-        <div class="col-md-4">
-          <img src="https://locuraviajes.com/wp-content/uploads/2013/09/las-nuevas-7-maravillas-del-mundo-Chich%C3%A9n-Itz%C3%A1-M%C3%A9xico-600x399.jpg" alt="Chichén Itzá">
-        </div>
-        <div class="col-md-4">
-          <img src="http://www.curiosfera.com/wp-content/uploads/2017/11/origen-gran-muralla-china.jpg" alt="Murralla China">
-        </div>
-      </div>
-    </div>
+    </section>
     <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
     <script type="text/javascript" src="vendors/js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="vendors/bootstrap/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
   </body>
