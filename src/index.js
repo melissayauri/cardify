@@ -1,6 +1,6 @@
 (function($) {
   /* maneja la interaaciones con elementos visuales*/
-  $.fn.cardify = function(){
+  $.fn.cardify = function() {
     /* busca todas la imagenes en el contenedor*/
     let imagen = $(this).find('img');
     /* añadiendo estilos a las imágenes*/
@@ -12,7 +12,6 @@
       /* con this se seleciona las imagnes, etiqueta img */
       /* busca el elemento padre de la etiqueta img, es decir figure y le adiciona la etiqueta figcaption*/
       $(this).parent().append($('<figcaption class= "letter"></figcaption>'));
-
     });
     /* incluyendo el hover*/
     imagen.mouseover(function() {

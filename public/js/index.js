@@ -1,6 +1,6 @@
 'use strict';
 
-(function ($) {
+(function($) {
   /* maneja la interaaciones con elementos visuales*/
   $.fn.cardify = function() {
     /* busca todas la imagenes en el contenedor*/
