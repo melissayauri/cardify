@@ -47,8 +47,11 @@ elemento `<figure>` que contenga la imagen (`<img>`) además de una etiqueta `<f
 
 7.- Finalmente para hacer la conversión de ES6 a ES5, se ejecuta en el `comand node.js`, lo siguiente `npm install --save-dev babel-cli` y luego `npm run bluid`, con ello convertiremos a ES5, que se ubica en la carpeta public.
 
+## Entorno
 
-***
+El proyecto se trabajo en el sistema operativo Windows 10 (64 Bits).
+
+*** 
 # Documentación
 
 ## ¿Qué es Cardify?
