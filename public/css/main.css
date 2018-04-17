@@ -8,11 +8,13 @@
 
 body{
   background: linear-gradient(90deg,#e85f5e,#e4b587);
+  height: 170vh;
 }
 
 /*clase reutilizable*/
 .title{
   font-size: 7rem;
+
 }
 
 /* estilos para el layout principal*/
@@ -21,15 +23,14 @@ body{
   font-size: 5rem;
   text-decoration: none;
   color: white;
-  margin-bottom: 2rem;
   background-color: #e85f5e;
 }
 
 .btn-lib a{
   text-decoration: none;
   color: white;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  /*padding-left: 3rem;
+  padding-right: 3rem;*/
 }
 
 /* efecto para que el botón prueba cardify el icono aparezca por la izquierda*/
@@ -59,13 +60,17 @@ button:hover:before {
   color: black;
   margin-top: 2rem;
 }
+img[alt="gif"]{
+  width: 70vw;
+}
 
-
-
+.lib{
+  height: 600vh;
+}
 /* estilos para el archivo que contiene el demo */
 .img{
-  width: 40rem;
-  height: 40rem;
+  width: 30rem;
+  height: 35rem;
   border: 5px solid white;
   margin-bottom: 2rem;
   border-radius: 10px;
@@ -123,4 +128,29 @@ div .modal-dialog .modal-header code{
   -webkit-transition: all 0.8s ease-in-out;
   -moz-transition: all 0.8s ease-in-out;
   transition: all 0.8s ease-in-out;
+}
+
+@media (min-width: 768px){
+  body{
+    
+  }
+  .btn-lib a{
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+  button:before {
+   top: 250px;
+  }
+
+  button:hover:before {
+   left: 93px;
+   color: white;
+   opacity: 0.8;
+  }
+  img[alt="gif"]{
+    width: 50vw;
+  }
+  .lib{
+    height: 100vh;
+  }
 }
