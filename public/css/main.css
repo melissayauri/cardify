@@ -96,10 +96,13 @@ nav{
 
 div .modal-dialog .modal-content{
   /*  background: linear-gradient(90deg,#e85f5e,#e4b587);*/
-    background-color: #e85f5e;
+    background-color: #f8f8fa;
+     font-family: 'Song Myung', serif;
 }
 div .modal-dialog .modal-header p{
   color:black;
+  font-family: 'Song Myung', serif;
+  font-size: 18px;
 }
 
 div .modal-dialog .modal-header code{
@@ -132,7 +135,7 @@ div .modal-dialog .modal-header code{
 
 @media (min-width: 768px){
   body{
-    
+
   }
   .btn-lib a{
     padding-left: 3rem;
